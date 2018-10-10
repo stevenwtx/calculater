@@ -1,0 +1,31 @@
+﻿<Page
+    x:Class="App9.addpage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App9"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Page.BottomAppBar>
+        <CommandBar>
+            <CommandBar.Content>
+                <Grid/>
+            </CommandBar.Content>
+            <AppBarButton Icon="Save" Label="保存" Click="Save_Click"/>
+
+        </CommandBar>
+    </Page.BottomAppBar>
+
+    <Grid Background="{ThemeResource SystemControlAcrylicWindowMediumHighBrush}">
+        <TextBlock Height="70" Margin="25,20,45,0" Text="添加联系人" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22"/>
+        <TextBlock HorizontalAlignment="Left" Height="50" Margin="40,155,0,0" Text="姓名：" TextWrapping="Wrap" VerticalAlignment="Top" Width="55"/>
+        <TextBox Name="name" HorizontalAlignment="Left" Height="30" Margin="95,150,0,0" Text="" VerticalAlignment="Top" Width="200"/>
+        <TextBlock HorizontalAlignment="Left" Height="40" Margin="40,235,0,0" Text="电话：" TextWrapping="Wrap" VerticalAlignment="Top" Width="45"/>
+        <TextBox Name="phone" HorizontalAlignment="Left" Height="30" Margin="95,230,0,0" Text="" VerticalAlignment="Top" Width="200"/>
+        <TextBox Name="QQ" HorizontalAlignment="Left" Height="20" Margin="95,315,0,0" Text="" VerticalAlignment="Top" Width="200"/>
+        <TextBlock HorizontalAlignment="Left" Height="32" Margin="44,319,0,0" Text="QQ：" TextWrapping="Wrap" VerticalAlignment="Top" Width="38"/>
+        <TextBlock HorizontalAlignment="Left" Height="30" Margin="44,395,0,0" Text="微信：" TextWrapping="Wrap" VerticalAlignment="Top" Width="52"/>
+        <TextBox Name="wechat" HorizontalAlignment="Left" Height="20" Margin="95,392,0,0" Text="" VerticalAlignment="Top" Width="200"/>
+
+    </Grid>
+</Page>
